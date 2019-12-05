@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:transitionName="sharedProfile"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/imageTitle"
+        android:transitionName="sharedTitle"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+         />
+
+    <Button
+        android:onClick="openWithSharedTransition"
+        android:text="Shared element"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Explode"
+        android:onClick="doExplodeTransition"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Slide"
+        android:onClick="doSlideTransition"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Fade"
+        android:onClick="doFadeTransition"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
